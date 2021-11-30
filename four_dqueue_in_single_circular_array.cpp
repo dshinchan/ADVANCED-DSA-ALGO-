@@ -128,12 +128,14 @@ class Deque {
 
 //-------------------------------------
   
+  int j=0;
   void specifier(){
-    for(int i=0;i<20;i=i+5){
-        rear[i] = i;
-        front[i] =i-1;
-        max[i] = i+4;
-        min[i] = i;
+    for(int i=0;i<5;i++){
+        rear[i] = j;
+        front[i] =j-1;
+        max[i] = j+4;
+        min[i] = j;
+        j=j+5
     }
   }
 
